@@ -7,11 +7,13 @@
 </head>
 
 <body>
-
 <nav>
-    <div><strong>⚡ HJ Cruz Electrical</strong></div>
+    <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">HJ Cruz Electrical</span>
+    </div>
     <span class="menu-toggle" onclick="toggleMenu()">☰</span>
-    <div id="nav-links">
+    <div class="links" id="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -22,23 +24,24 @@
 
 <div class="section">
     <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> 0400 000 000</p>
-    <p><strong>Email:</strong> example@email.com</p>
+    <p><strong>Phone:</strong> 0426 861 512</p>
+    <p><strong>Email:</strong> palapalazzolo1979@gmail.com</p>
     <p><strong>Location:</strong> Sydney, NSW</p>
 
     <h2>Request a Quote</h2>
-    <form onsubmit="submitQuote(event)">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Phone Number" required>
-        <textarea placeholder="Project details" rows="5" required></textarea>
-        <button type="submit">Submit</button>
+    <p>Complete the form below to request a quote. Your email program will open with the details.</p>
+
+    <form action="mailto:palapalazzolo1979@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Full Name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="text" name="Phone" placeholder="Phone Number" required>
+        <textarea name="Details" placeholder="Project details" rows="5" required></textarea>
+        <button type="submit">Submit Quote Request</button>
     </form>
 </div>
 
 <footer>
     © 2025 HJ Cruz Electrical
 </footer>
-
 </body>
 </html>
