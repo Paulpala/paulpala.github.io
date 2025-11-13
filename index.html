@@ -11,6 +11,7 @@
             font-family: Arial, sans-serif;
             background: #f5f7fa;
             color: #333;
+            line-height: 1.6;
         }
 
         /* HEADER / HERO */
@@ -20,47 +21,47 @@
             padding: 70px 20px;
             text-align: center;
         }
-
         .hero h1 {
             font-size: 48px;
             margin-bottom: 10px;
             font-weight: bold;
         }
-
         .hero p {
             font-size: 20px;
             opacity: 0.9;
         }
 
-        /* ABOUT SECTION */
+        /* SECTIONS */
         .section {
-            max-width: 1000px;
-            margin: 60px auto;
+            max-width: 1050px;
+            margin: 50px auto;
             padding: 0 20px;
         }
-
         .section h2 {
-            font-size: 32px;
+            font-size: 34px;
             margin-bottom: 15px;
             color: #003a78;
+            border-left: 5px solid #0066cc;
+            padding-left: 15px;
+        }
+        .section p {
+            font-size: 18px;
         }
 
         /* SERVICES GRID */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             margin-top: 25px;
         }
-
         .service-box {
             background: white;
             padding: 25px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-            border-left: 5px solid #0066cc;
+            border-left: 6px solid #0066cc;
         }
-
         .service-box h3 {
             margin-top: 0;
             color: #003a78;
@@ -72,12 +73,12 @@
             color: white;
             padding: 30px;
             border-radius: 10px;
-            margin-top: 30px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .contact-box p {
+            margin-top: 30px;
             font-size: 18px;
+        }
+        .contact-box p {
+            margin: 8px 0;
         }
 
         /* FOOTER */
@@ -87,7 +88,9 @@
             background: #003a78;
             color: white;
             margin-top: 60px;
+            font-size: 14px;
         }
+
     </style>
 </head>
 
@@ -96,58 +99,108 @@
     <!-- HERO -->
     <div class="hero">
         <h1>HJ Cruz Electrical</h1>
-        <p>Domestic • Commercial • Maintenance • Emergency Electrical Services</p>
+        <p>Premium Electrical Engineering • Commercial • Industrial • Infrastructure</p>
     </div>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
     <div class="section">
         <h2>About Us</h2>
         <p>
-            HJ Cruz Electrical is a Sydney-based electrical contractor providing safe, reliable and compliant electrical 
-            services. With extensive industry experience, we deliver high-quality workmanship across residential, 
-            commercial and emergency call-out environments.
+            HJ Cruz Electrical is led by Paul Palazzolo — an Electrical Engineer, licensed Electrician and Associate Member of Engineers Australia 
+            with over 25 years of experience across commercial, industrial, and critical infrastructure projects. Paul has delivered major works 
+            for Sydney Trains, Sydney Metro, Macquarie Bank, Transport for NSW, and large commercial developments across Sydney.
+        </p>
+        <p>
+            With a strong background in engineering design review, project management, electrical construction, and maintenance, 
+            HJ Cruz Electrical provides a rare balance of practical expertise and high-level technical capability. 
+            Clients rely on us for safe, compliant, and engineering-grade electrical solutions.
         </p>
     </div>
 
-    <!-- SERVICES SECTION -->
+    <!-- SERVICES -->
     <div class="section">
         <h2>Our Services</h2>
 
         <div class="services-grid">
+
             <div class="service-box">
-                <h3>Switchboard Upgrades</h3>
-                <p>Modern, safe, and compliant switchboard upgrades, replacements and repairs.</p>
+                <h3>Electrical Engineering & Compliance</h3>
+                <p>LV system design review, engineering documentation, RFI responses, compliance audits, WHS assessments and electrical safety assurance.</p>
             </div>
+
+            <div class="service-box">
+                <h3>Commercial & Industrial Electrical</h3>
+                <p>Switchboards, lighting, power distribution, automation, submains, DB installations and commercial fit-out services.</p>
+            </div>
+
             <div class="service-box">
                 <h3>Emergency & Exit Lighting</h3>
-                <p>Testing, certification and installation in accordance with AS/NZS 2293.</p>
+                <p>AS/NZS 2293 testing, installation, certification and ongoing maintenance to ensure compliance and safety.</p>
             </div>
+
             <div class="service-box">
-                <h3>Fault Finding & Repairs</h3>
-                <p>Efficient identification and repair of electrical issues with minimal downtime.</p>
+                <h3>Maintenance & Facilities Support</h3>
+                <p>Preventative and reactive maintenance for commercial buildings, rail assets, government facilities and corporate environments.</p>
             </div>
+
             <div class="service-box">
-                <h3>Renovations & New Installations</h3>
-                <p>Professional installations for homes, offices, retail spaces and fit-outs.</p>
+                <h3>Project Delivery & Contract Management</h3>
+                <p>End-to-end project management, budgeting, tender evaluation, labour planning, construction oversight and commissioning.</p>
             </div>
+
+            <div class="service-box">
+                <h3>Fault Finding & Emergency Repairs</h3>
+                <p>Rapid diagnosis and repair of electrical issues, minimising downtime and restoring systems safely.</p>
+            </div>
+
         </div>
     </div>
 
-    <!-- CONTACT SECTION -->
+    <!-- EXPERIENCE / PROJECTS -->
+    <div class="section">
+        <h2>Major Projects & Experience</h2>
+        <p>Paul has led and delivered work across some of Sydney’s most complex and high-profile sites, including:</p>
+
+        <ul style="font-size:18px; margin-left:20px;">
+            <li>Sydney Metro – Martin Place Precinct</li>
+            <li>Macquarie Bank & 39 Martin Place</li>
+            <li>Sydney Trains Maintenance Centres (various)</li>
+            <li>Transport for NSW Hub – 7 Harvest Street</li>
+            <li>255 George Street Sydney</li>
+            <li>Lucas Heights Nuclear Reactor (ANSTO)</li>
+            <li>Deutsche Bank, Phillip Street fit-out</li>
+            <li>Industrial facilities, data centres & infrastructure sites</li>
+        </ul>
+    </div>
+
+    <!-- QUALIFICATIONS -->
+    <div class="section">
+        <h2>Qualifications & Licences</h2>
+        <ul style="font-size:18px; margin-left:20px;">
+            <li>Advanced Diploma of Electrical Engineering</li>
+            <li>NSW Electrical Contractor Licence</li>
+            <li>Engineers Australia – Associate Member</li>
+            <li>FPAS – Fire Protection Accreditation Scheme</li>
+            <li>WHS White Card</li>
+            <li>Perform Rescue from a Live LV Panel</li>
+            <li>First Aid & CPR Certification</li>
+        </ul>
+    </div>
+
+    <!-- CONTACT -->
     <div class="section">
         <h2>Contact Us</h2>
-
         <div class="contact-box">
-            <p><strong>📞 Phone:</strong> 0400 000 000</p>
-            <p><strong>📧 Email:</strong> yourname@example.com</p>
-            <p><strong>📍 Service Area:</strong> Sydney, NSW</p>
+            <p><strong>📞 Phone:</strong> 0426 861 512</p>
+            <p><strong>📧 Email:</strong> palapalazzolo1979@gmail.com</p>
+            <p><strong>📍 Location:</strong> Dee Why, Sydney NSW</p>
+            <p><strong>🛠 Service Area:</strong> Sydney Metropolitan & Greater Sydney</p>
         </div>
     </div>
 
     <!-- FOOTER -->
     <footer>
-        © 2025 HJ Cruz Electrical — All rights reserved.
+        © 2025 HJ Cruz Electrical — Electrical Engineering & Contracting
     </footer>
 
 </body>
-</html>
