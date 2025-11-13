@@ -2,52 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <h1>HJ Cruz Electrical</h1>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HJ Cruz Electrical</title>
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { padding: 20px; text-align: center; }
-        main { max-width: 900px; margin: 20px auto; padding: 0 15px; }
-        h1, h2 { margin-bottom: 10px; }
-        .section { margin-bottom: 30px; }
-        footer { text-align: center; padding: 15px; font-size: 0.9rem; border-top: 1px solid #ddd; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* HEADER / HERO */
+        .hero {
+            background: linear-gradient(135deg, #003a78, #0066cc);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        /* ABOUT SECTION */
+        .section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #003a78;
+        }
+
+        /* SERVICES GRID */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-left: 5px solid #0066cc;
+        }
+
+        .service-box h3 {
+            margin-top: 0;
+            color: #003a78;
+        }
+
+        /* CONTACT BOX */
+        .contact-box {
+            background: #0066cc;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .contact-box p {
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #003a78;
+            color: white;
+            margin-top: 60px;
+        }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>My Electrical Company</h1>
-        <p>Domestic • Commercial • Maintenance • Emergency Call-outs</p>
-    </header>
 
-    <main>
-        <section class="section">
-            <h2>About Us</h2>
-            <p>We are a Sydney-based electrical contractor providing reliable, safe and compliant electrical services.</p>
-        </section>
+    <!-- HERO -->
+    <div class="hero">
+        <h1>HJ Cruz Electrical</h1>
+        <p>Domestic • Commercial • Maintenance • Emergency Electrical Services</p>
+    </div>
 
-        <section class="section">
-            <h2>Services</h2>
-            <ul>
-                <li>Switchboard upgrades and repairs</li>
-                <li>Emergency and exit lighting</li>
-                <li>Fault finding and maintenance</li>
-                <li>New installations and renovations</li>
-            </ul>
-        </section>
+    <!-- ABOUT SECTION -->
+    <div class="section">
+        <h2>About Us</h2>
+        <p>
+            HJ Cruz Electrical is a Sydney-based electrical contractor providing safe, reliable and compliant electrical 
+            services. With extensive industry experience, we deliver high-quality workmanship across residential, 
+            commercial and emergency call-out environments.
+        </p>
+    </div>
 
-        <section class="section">
-            <h2>Contact</h2>
-            <p>Phone: 0400 000 000</p>
-            <p>Email: youremail@example.com</p>
-            <p>Service area: Sydney, NSW</p>
-        </section>
-    </main>
+    <!-- SERVICES SECTION -->
+    <div class="section">
+        <h2>Our Services</h2>
 
+        <div class="services-grid">
+            <div class="service-box">
+                <h3>Switchboard Upgrades</h3>
+                <p>Modern, safe, and compliant switchboard upgrades, replacements and repairs.</p>
+            </div>
+            <div class="service-box">
+                <h3>Emergency & Exit Lighting</h3>
+                <p>Testing, certification and installation in accordance with AS/NZS 2293.</p>
+            </div>
+            <div class="service-box">
+                <h3>Fault Finding & Repairs</h3>
+                <p>Efficient identification and repair of electrical issues with minimal downtime.</p>
+            </div>
+            <div class="service-box">
+                <h3>Renovations & New Installations</h3>
+                <p>Professional installations for homes, offices, retail spaces and fit-outs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="section">
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+            <p><strong>📞 Phone:</strong> 0400 000 000</p>
+            <p><strong>📧 Email:</strong> yourname@example.com</p>
+            <p><strong>📍 Service Area:</strong> Sydney, NSW</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer>
-        &copy; <span id="year"></span> My Electrical Company – All rights reserved.
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
+        © 2025 HJ Cruz Electrical — All rights reserved.
     </footer>
+
 </body>
 </html>
