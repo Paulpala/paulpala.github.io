@@ -1,12 +1,41 @@
-// Mobile navigation menu toggle
-function toggleMenu() {
-    let links = document.getElementById("nav-links");
-    links.style.display = links.style.display === "block" ? "none" : "block";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HJ Cruz Electrical</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
 
-// Quote form dummy handler
-function submitQuote(e) {
-    e.preventDefault();
-    alert("Thank you. Your quote request has been submitted.");
-}
+<body>
 
+<nav>
+    <div><strong>⚡ HJ Cruz Electrical</strong></div>
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+    <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>HJ Cruz Electrical</h1>
+    <p>Reliable • Professional • Experienced</p>
+</div>
+
+<div class="section">
+    <h2>Welcome</h2>
+    <p>
+        With over 25 years of electrical industry experience across Sydney’s commercial, industrial and infrastructure 
+        sectors, HJ Cruz Electrical provides safe, compliant and high-quality electrical services.
+    </p>
+</div>
+
+<footer>
+    © 2025 HJ Cruz Electrical
+</footer>
+
+</body>
+</html>
