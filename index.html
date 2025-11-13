@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Electrical Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { padding: 20px; text-align: center; }
+        main { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+        h1, h2 { margin-bottom: 10px; }
+        .section { margin-bottom: 30px; }
+        footer { text-align: center; padding: 15px; font-size: 0.9rem; border-top: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Electrical Company</h1>
+        <p>Domestic • Commercial • Maintenance • Emergency Call-outs</p>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>About Us</h2>
+            <p>We are a Sydney-based electrical contractor providing reliable, safe and compliant electrical services.</p>
+        </section>
+
+        <section class="section">
+            <h2>Services</h2>
+            <ul>
+                <li>Switchboard upgrades and repairs</li>
+                <li>Emergency and exit lighting</li>
+                <li>Fault finding and maintenance</li>
+                <li>New installations and renovations</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Contact</h2>
+            <p>Phone: 0400 000 000</p>
+            <p>Email: youremail@example.com</p>
+            <p>Service area: Sydney, NSW</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> My Electrical Company – All rights reserved.
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
